@@ -4,7 +4,13 @@ import java.io.Serializable;
 import java.util.Objects;
 import java.util.Set;
 
-// Represents the data of a page, including its title and content.
+/**
+ * Dados imutáveis de uma página, enviados pelo Downloader aos Barrels por RMI.
+ * Guarda o URL, o título, um excerto, as palavras e as ligações de saída.
+ * As palavras e os URLs devem ser normalizados antes da construção; esta classe
+ * apenas transporta os dados, sem os extrair ou normalizar.
+ * Os conjuntos são copiados e não podem ser modificados através dos getters.
+ */
 public final class PageData implements Serializable {
 
     // Serial version UID for serialization
@@ -17,6 +23,17 @@ public final class PageData implements Serializable {
     private final Set<String> words;
     private final Set<String> outgoingLinks;
 
+    /**
+     * Cria uma página com cópias não modificáveis dos conjuntos fornecidos.
+     * Alterar os conjuntos originais posteriormente não altera esta página.
+     * @param url URL normalizado da página, não nulo
+     * @param title título extraído do HTML, não nulo
+     * @param snippet excerto curto do texto da página, não nulo
+     * @param words palavras normalizadas, num conjunto não nulo e sem elementos nulos
+     * @param outgoingLinks URLs normalizados das ligações de saída, num conjunto
+     *                      não nulo e sem elementos nulos
+     * @throws NullPointerException se um argumento ou um elemento dos conjuntos for nulo
+     */
     public PageData(
                     String url,
                     String title,

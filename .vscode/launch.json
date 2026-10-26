@@ -1,15 +1,24 @@
-{ // vibe-code
-    "version": "0.2.0", // vibe-code
-    "configurations": [ // vibe-code
-        { // vibe-code
-            "type": "java", // vibe-code
-            "name": "Java: executar ficheiro aberto", // vibe-code
-            "request": "launch", // vibe-code
-            "javaExec": "C:\\Program Files\\Java\\jdk-26.0.2\\bin\\java.exe", // vibe-code
-            "mainClass": "${file}", // vibe-code
-            "console": "integratedTerminal", // vibe-code
-            "internalConsoleOptions": "neverOpen", // vibe-code
-            "classPaths": ["$Auto"] // vibe-code
-        } // vibe-code
-    ] // vibe-code
-} // vibe-code
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PageDataTest",
+            "request": "launch",
+            "mainClass": "googol.model.PageDataTest",
+            "projectName": "googol"
+        },
+        {
+            "type": "java",
+            "name": "Java: executar ficheiro aberto",
+            "request": "launch",
+            "javaExec": "C:\\Program Files\\Java\\jdk-26.0.2\\bin\\java.exe",
+            "mainClass": "${file}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "classPaths": [
+                "$Auto"
+            ]
+        }
+    ]
+}

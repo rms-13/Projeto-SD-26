@@ -1,7 +1,8 @@
-{ // vibe-code
-    "java.debug.settings.console": "integratedTerminal", // vibe-code
-    "terminal.integrated.defaultProfile.windows": "Command Prompt", // vibe-code
-    "terminal.integrated.automationProfile.windows": { // vibe-code
-        "path": "C:\\Windows\\System32\\cmd.exe" // vibe-code
-    } // vibe-code
-} // vibe-code
+{
+    "java.debug.settings.console": "integratedTerminal",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.automationProfile.windows": {
+        "path": "C:\\Windows\\System32\\cmd.exe"
+    },
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

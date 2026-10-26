@@ -2,7 +2,7 @@
 # Googol - Meta 1
 Estrutura inicial de um motor de pesquisa distribuído em Java com RMI.
 ## Requisitos
-Java JDK 17 ou superior e Maven.
+Java JDK 25 (LTS) ou superior e Maven.
 ## Compilação
 Na raiz do projeto, executar `mvn compile`.
 O pom.xml inicial não inclui ainda dependências externas; adicionar jsoup ao implementar o Downloader.
