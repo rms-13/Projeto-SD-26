@@ -1,0 +1,15 @@
+{ // vibe-code
+    "version": "0.2.0", // vibe-code
+    "configurations": [ // vibe-code
+        { // vibe-code
+            "type": "java", // vibe-code
+            "name": "Java: executar ficheiro aberto", // vibe-code
+            "request": "launch", // vibe-code
+            "javaExec": "C:\\Program Files\\Java\\jdk-26.0.2\\bin\\java.exe", // vibe-code
+            "mainClass": "${file}", // vibe-code
+            "console": "integratedTerminal", // vibe-code
+            "internalConsoleOptions": "neverOpen", // vibe-code
+            "classPaths": ["$Auto"] // vibe-code
+        } // vibe-code
+    ] // vibe-code
+} // vibe-code
